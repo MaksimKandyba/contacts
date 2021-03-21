@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/MaksimKandyba/contacts.svg?branch=master)](https://travis-ci.org/MaksimKandyba/contacts)
 
 to build and run
 1 ensure ports 3333, 4444, and 4445 are free to be used
