@@ -1,0 +1,10 @@
+services:
+  contacts-main-db:
+    image: contacts-main-db
+    container_name: contacts-main-db
+    ports:
+    - "4444:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: contacts

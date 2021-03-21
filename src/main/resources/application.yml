@@ -1,0 +1,14 @@
+server:
+  tomcat:
+    relaxed-query-chars: "^,$,.,*,?,+,[,],\\,|,(,),!"
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:4444/contacts
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: password
+
+fetch-size: 1000
+limit: 1000

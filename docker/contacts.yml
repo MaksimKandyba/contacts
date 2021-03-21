@@ -1,0 +1,6 @@
+services:
+  contacts:
+    image: contacts
+    container_name: contacts
+    ports:
+    - "3333:8090"
