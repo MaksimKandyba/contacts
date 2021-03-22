@@ -9,6 +9,6 @@ script:
 after_script:
 - echo "travis script finished"
 after_success:
-- echo "travis build was successful. $TRAVIS_TEST_RESULT"
+- echo "travis build was successful"
 after_failure:
 - echo "travis build was failed"
