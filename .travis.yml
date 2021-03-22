@@ -4,6 +4,7 @@ services:
 before_script:
 - echo "starting travis build"
 script:
+- cd scripts
 - sh travis-build.sh
 after_script:
 - echo "travis script finished"
