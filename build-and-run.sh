@@ -6,8 +6,6 @@ echo "building loaded database image"
 docker build -f Dockerfile-loaded -t contacts-loaded-db .
 
 echo "running main database"
-docker --version
-docker-compose --version
 cd ..
 docker-compose -f contacts-main-db.yml up -d
 
