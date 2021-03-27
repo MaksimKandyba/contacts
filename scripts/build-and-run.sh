@@ -1,14 +1,10 @@
 chmod +x build-service-jar.sh
 ./build-service-jar.sh
 
-echo "stopping loaded database"
-docker stop contacts-loaded-db
-docker rm contacts-loaded-db
-
-echo "building service image"
+echo "building main service image"
 cd ..
-docker build -t contacts .
+docker build -f Dockerfile-main -t contacts-main .
 
-echo "running service"
+echo "running main service with main database"
 cd docker
-docker-compose -f contacts.yml up -d
+docker-compose -f contacts-main.yml -f contacts-main-db.yml up -d

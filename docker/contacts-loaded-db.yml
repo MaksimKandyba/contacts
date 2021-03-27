@@ -4,9 +4,7 @@ services:
     image: contacts-loaded-db
     container_name: contacts-loaded-db
     ports:
-    - "4445:5432"
-    expose:
-    - "5433"
+    - "4446:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password

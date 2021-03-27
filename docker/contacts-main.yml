@@ -1,0 +1,7 @@
+version: "3"
+services:
+  contacts-main:
+    image: contacts-main
+    container_name: contacts-main
+    ports:
+    - "3333:8090"

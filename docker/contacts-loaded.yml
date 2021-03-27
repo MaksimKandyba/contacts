@@ -1,0 +1,7 @@
+version: "3"
+services:
+  contacts-loaded:
+    image: contacts-loaded
+    container_name: contacts-loaded
+    ports:
+    - "3334:8090"

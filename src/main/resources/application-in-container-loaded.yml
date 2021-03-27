@@ -1,0 +1,3 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://contacts-loaded-db:5432/contacts
