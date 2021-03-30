@@ -8,6 +8,10 @@ docker build -f Dockerfile-loaded-db -t contacts-loaded-db .
 echo "running databases"
 docker-compose -f contacts-main-db.yml -f contacts-loaded-db.yml up -d
 
+echo "sleeping till databases are up"
+sleep 60
+echo "waking up"
+
 echo "packaging service jar"
 cd ..
 mvn clean package
