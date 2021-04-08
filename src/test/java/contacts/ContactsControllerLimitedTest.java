@@ -22,6 +22,6 @@ public class ContactsControllerLimitedTest {
 
     @Test
     public void doesNotStartsWith_A_limited() {
-        assertThat(execute(restTemplate, port, "^A.*$").length).isEqualTo(5);
+        assertThat(execute(restTemplate, port, "^A.*$").size()).isEqualTo(5);
     }
 }
